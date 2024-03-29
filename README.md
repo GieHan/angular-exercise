@@ -11,6 +11,7 @@ The branch naming convention will be explained in table below :
 | ------------- | ------------- |
 | main | main branch|
 | prj/(project name)  | project branch  |
+| prj/(project name)/(feature name)  | sub branch of a project  |
 | learn/(concept/topic name)  | branch to learn new concept  |
 
 &nbsp;
