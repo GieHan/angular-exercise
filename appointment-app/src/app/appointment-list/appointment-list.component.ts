@@ -40,7 +40,6 @@ export class AppointmentListComponent implements OnInit{
 
   deleteAppointment(index: number){
     this.appointments.splice(index, 1);
-
     this.saveLocaly();
   }
 
