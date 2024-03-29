@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Appointment } from '../models/appointment';
 
 @Component({
   selector: 'app-appointment-list',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./appointment-list.component.css']
 })
 export class AppointmentListComponent {
+
+  newAppointmentTitle : string  = "";
+  newAppointmentDate : Date     = new Date();
+
+  appointments: Appointment[]   = [];
+
 
 }
