@@ -14,7 +14,6 @@ export class AppointmentListComponent {
   appointments: Appointment[]   = [];
 
   addAppointment(){
-
     // Check for empty input first
     if (this.newAppointmentTitle.trim().length && this.newAppointmentDate) {
       let currentAppointment: Appointment = {
@@ -29,5 +28,9 @@ export class AppointmentListComponent {
     //Refresh user input to default, since it is two way data binding.
     this.newAppointmentTitle = "";
     this.newAppointmentDate = new Date();
+  }
+
+  deleteAppointment(index: number){
+    this.appointments.splice(index, 1);
   }
 }
