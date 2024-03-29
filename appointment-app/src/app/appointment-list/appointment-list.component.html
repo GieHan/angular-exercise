@@ -9,5 +9,5 @@ Goals :
 <div>
     <input [(ngModel)]="newAppointmentTitle" placeholder="appointment description">
     <input [(ngModel)]="newAppointmentDate" type="date" placeholder="appointment date">
-    <button>Add</button>
+    <button (click)="addAppointment()">Add</button>
 </div>
