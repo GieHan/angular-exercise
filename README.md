@@ -1,7 +1,15 @@
 # Overview
 This is a project placeholder for Angular learning journey, filled with subprojects and playground to learn new concept.
-<br/>
-<br/>
+&nbsp;
+&nbsp;
+
+## Project goals
+In this project we will learn :
+1. Services, Forms, Form-validation and Routing
+2. Saving and loading data from local storage
+
+&nbsp;
+&nbsp;
 
 # Project structure
 The project will be organized into multiple branch for each learning topic/context.
