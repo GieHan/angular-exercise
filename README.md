@@ -7,6 +7,7 @@ This is a project placeholder for Angular learning journey, filled with subproje
 In this project we will learn :
 1. Services, Forms, Form-validation and Routing
 2. Saving and loading data from local storage
+3. How module & component works
 
 &nbsp;
 &nbsp;
