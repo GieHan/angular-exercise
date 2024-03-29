@@ -5,9 +5,18 @@ Goals :
 3. Delete an appointment
 -->
 
-
+<!-- Create an Appointment -->
 <div>
     <input [(ngModel)]="newAppointmentTitle" placeholder="appointment description">
     <input [(ngModel)]="newAppointmentDate" type="date" placeholder="appointment date">
     <button (click)="addAppointment()">Add</button>
 </div>
+
+
+<!-- Show all appointment -->
+<ul>
+    <li *ngFor="let appointment of appointments">
+        {{appointment.id}} {{appointment.title}} {{appointment.date | date: 'dd.MM.yyyy'}}
+    </li>
+</ul>
+
