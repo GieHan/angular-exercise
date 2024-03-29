@@ -14,6 +14,20 @@ export class AppointmentListComponent {
   appointments: Appointment[]   = [];
 
   addAppointment(){
-    alert(this.newAppointmentTitle + " " + this.newAppointmentDate);
+
+    // Check for empty input first
+    if (this.newAppointmentTitle.trim().length && this.newAppointmentDate) {
+      let currentAppointment: Appointment = {
+        id: Date.now(),
+        title: this.newAppointmentTitle,
+        date: this.newAppointmentDate
+      };
+
+      this.appointments.push(currentAppointment);
+    }
+
+    //Refresh user input to default, since it is two way data binding.
+    this.newAppointmentTitle = "";
+    this.newAppointmentDate = new Date();
   }
 }
