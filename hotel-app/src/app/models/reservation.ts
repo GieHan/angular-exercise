@@ -4,5 +4,5 @@ export interface Reservation {
     checkOutDate: Date,
     guestName: string,
     guestEmail: string,
-    roomnumber: number
+    roomNumber: number
 }

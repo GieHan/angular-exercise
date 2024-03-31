@@ -11,7 +11,7 @@ export class ReservationService {
 
   // Because Constructor is loaded before ngOnInit, we load here
   constructor() {
-    this.initFromLocalStroage();
+    this.initData();
    }
 
   // ----- CRUD
@@ -45,7 +45,7 @@ export class ReservationService {
     localStorage.setItem(this.STORAGE_KEYWORD, JSON.stringify(this.reservations));
   }
 
-  initFromLocalStroage(){
+  initData(){
     let initReservation = localStorage.getItem(this.STORAGE_KEYWORD);
     this.reservations   = initReservation? JSON.parse(initReservation) : [];
   }

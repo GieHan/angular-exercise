@@ -1,1 +1,18 @@
-<p>reservation-list works!</p>
+<h2>Reservation list</h2>
+
+<!-- The list will be showed if there is any raservation list, if not then show the template -->
+<ul *ngIf="reservations.length; else noReservation">
+    <li *ngFor="let reservation of reservations">
+        Guest: {{reservation.guestName}} <br>
+        Email: {{reservation.guestEmail}} <br>
+        Room: {{reservation.roomNumber}} <br>
+        Check-in: {{reservation.checkInDate}} <br>
+        Check-out: {{reservation.checkOutDate}} <br>
+    </li>
+</ul>
+
+
+<!-- Template will show conditionally -->
+<ng-template #noReservation>
+    <p>No reservation available</p>
+</ng-template>
