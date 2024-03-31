@@ -11,6 +11,9 @@ import { Router, RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule
+  ], exports: [
+    //Export so that other module can use component list below (make sure homemodule decales also in this module)
+    HomeComponent
   ]
 })
 export class HomeModule { }
